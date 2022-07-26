@@ -1,0 +1,276 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    /* width: 85%; */ 
+}
+/* ----------------Flexbox + Nav styling----------------*/
+.flexbox-css{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 3.2rem;
+    margin: 0;
+}
+.desktop-links a, .mobile-menu a {
+    margin-left: 2em;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.fiber-buttons a, .fiber-home p{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.button-color{
+    border: 0px;
+    border-radius: 6px;
+    padding: 1em;
+    background: #4D13D1;
+    color: white;
+    font-weight: 500;
+    margin-left: 2em;
+    cursor: pointer;
+}
+.Hamburger, .mobile-menu{
+    display: none;
+}
+header, .section-1, footer{
+    padding: 0 4em;
+    background: #FBF8F3;
+}
+.section-2, .section-3, .section-4 {
+    padding: 0 4em;
+}
+/* ----------------Section 1---------------- */
+.fa-star{
+    color: gold;
+    /* colored the star icons */
+}
+.free-trial-btn{
+    border: 0px;
+    border-radius: 6px;
+    padding: 1em;
+    background: #4D13D1;
+    color: white;
+    font-weight: 500;
+    margin-right: 2em;
+}
+.checks ul li{
+    background: url(./Assets/Checkmark.svg) no-repeat left center;
+    list-style: none;
+    padding: 0 1.3em;
+}
+.checks ul{
+    display: flex;
+    padding: 0;
+}
+.image img{
+    width: 40vw;
+}
+.create-portfolio p, .p-opacity {
+    opacity: 0.8;
+    color: black;
+}
+.mobile-view{
+    display: none;
+}
+/* ----------------Section-2---------------- */
+.p-why-fiber {
+    font-weight: 700;
+    color: #4D13D1;
+}
+.p-header {
+    font-weight: 700;
+    color: black;
+}
+/* ----------------Section-3---------------- */
+.diverse-portfolio{
+    background: #4D13D1;
+    border-radius: 8px;
+    color: white;
+    padding: 2em 2em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-diverse-2 img{
+    width: 40vw;
+    padding-top: 1em;
+}
+/* this made the picture stick to the bottom idk why */
+.diverse-portfolio .box-diverse-2{
+    display: flex;
+}
+.diverse-button{
+    border: 0px;
+    border-radius: 6px;
+    padding: 1em;
+    color: #4D13D1;
+    font-weight: 600;
+}
+.box-diverse-2 img:nth-child(2){
+    display: none;
+}
+/*---------------------------Section 4---------------------------  */
+.p-name {
+    margin: 0;
+    font-weight: 700;
+    color: #4D13D1;
+
+}
+.revenue {
+    display: inline;
+}
+.user-avi{
+    display: flex;
+    align-items: center;
+    
+}
+.details{
+    margin: 0 .5em;
+}
+.user{
+    border: 1px solid grey;
+    width: 28%;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 381px
+
+}
+.container{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+}
+.diverse-button-user{
+    width: 100%;
+    border: 0px;
+    border-radius: 6px;
+    padding: 1em;
+    color: #4D13D1;
+    font-weight: 600;
+}
+/*----------------Footer----------------  */
+.fiber-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.fiber-footer ul li, .fiber-footer a, .fiber-footer ul{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    opacity: 0.9;
+    color: black;
+    line-height: 1.65em;
+}
+.fiber-details{
+    opacity: 0.9;
+}
+
+
+
+/* ---------------------------Media Query-------------------------------------- */
+@media(max-width:675px){
+/*----------------Header (Nav Bar)----------------  */
+.desktop-links, .fiber-buttons {
+    display: none;
+}
+.Hamburger{
+    display: block;
+    color: black;
+}
+.mobile-menu.responsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-menu.responsive a {
+    margin-bottom: .5em;
+}
+/*----------------Mobile section-1---------------- */
+.create-portfolio, .image{
+    display: none;
+}
+.mobile-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-mobile{
+    margin: 0 auto;
+}
+.image-mobile img{
+    width: 80vw;
+}
+.free-trial-btn{
+    width: 100%;
+    margin: 0 auto;
+}
+.free-trial a {
+    margin-top: .8em;
+}
+.checks ul{
+    display: block;
+}
+.checks ul li{
+    margin-bottom: .7em;
+}
+header, .section-1, .section-2, .section-3, footer {
+    padding: 1em 1.5em 0;
+    margin: 0 auto;
+}
+/*----------------Mobile section-2---------------- */
+.box-0{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.box-1, .box-2, .box-3{
+    margin: 0 0 1em;
+}
+
+/* ----------------Mobile section-3---------------- */
+.box-diverse-2 img:nth-child(1) {
+    display: none;
+}
+.box-diverse-2 img:nth-child(2) {
+    display: flex;
+    width: 65vw;
+}
+.diverse-portfolio{
+    display: flex;
+    flex-direction: column;
+}
+.diverse-button{
+    width: 100%;
+}
+/* ----------------Mobile section-4---------------- */
+.container {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2em;
+}
+.user {
+    border: 1px solid grey;
+    width: 100%;
+    padding: 1em 2em;
+    border-radius: 10px;
+    max-width: 381px;
+    margin: 0 0 3em;
+}
+.section-4{
+    padding: 0 1.5em;
+}
+/* ----------------Mobile section-4---------------- */
+.fiber-footer{
+    display: flex;
+    flex-direction: column;
+}
+}
